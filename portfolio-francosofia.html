@@ -6,6 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
     <title>Personal Portfolio</title>
 </head>
 <body id="body">
@@ -16,10 +25,10 @@
         <div class="opciones-menu">
             <nav class="nav-header">
                 <ul class="items-menu">
-                    <a href="#" class="link">
+                    <a href="#hola" class="link">
                         <li class="item">HOLA</li>
                     </a>
-                    <a href="#" class="link">
+                    <a href="#conocimientos" class="link">
                         <li class="item">CONOCIMIENTOS</li>
                     </a>
                     <a href="#" class="link">
@@ -37,7 +46,7 @@
 
 <!---Sección Lo que Hago-->
 
-<section class="sobre-mi">
+<section class="sobre-mi" id="hola">
     <div class="content">
         <div class="info">
             <p class="saludo">¡Hola! Soy</p>
@@ -50,6 +59,95 @@
 </section>
 
 <!---Fin Sección Lo que Hago-->
+
+<!--Sección Mis Conocimientos-->
+
+<section class="lenguajes" id="conocimientos">
+    <div class="presentacion-conocimientos">
+            <h1 class="mis-conocimientos">Mis conocimientos</h1>
+            <p class="conocimientos-descripcion">Estos son los lenguajes que utilizo con mayor frecuencia</p>
+    </div>
+    <div class="grid-lenguajes">
+        <div class="imagen-lenguaje">
+            <i class="devicon-html5-plain colored"></i>
+            <p class="titulo-lenguaje">HTML5</p>
+        </div>
+        <div class="imagen-lenguaje">
+            <i class="devicon-css3-plain colored"></i>
+            <p class="titulo-lenguaje">CSS3</p>
+        </div>
+        <div class="imagen-lenguaje">
+            <i class="devicon-sass-original colored"></i>
+            <p class="titulo-lenguaje">Sass</p>
+        </div>
+        <div class="imagen-lenguaje">
+            <i class="devicon-javascript-plain colored"></i>
+            <p class="titulo-lenguaje">JavaScript</p>
+        </div>
+        <div class="imagen-lenguaje">
+            <i class="devicon-react-original colored"></i>
+            <p class="titulo-lenguaje">React</p>
+        </div>
+        <div class="imagen-lenguaje">
+            <i class="devicon-git-plain colored"></i>
+            <p class="titulo-lenguaje">GIT</p>
+        </div>
+    </div>
+
+</section>
+
+<!--Fin Sección Mis Conocimientos-->
+
+<!--Sección Quote-->
+
+<section class="section-quote">
+    <div class="quote-content">
+        <i class="fas fa-quote-right quote-icon"></i>
+        <p class="frase-celebre">“La tecnología por sí sola no basta. También tenemos que poner el corazón”</p>
+        <h2 class="autor-frase-celebre">Jane Goodall</h2>
+    </div>
+</section>
+
+<!---Fin Sección Quote-->
+
+<!---Sección Proyectos-->
+
+<section class="mis-proyectos">
+    <div class="presentacion-proyectos">
+        <h1 class="titulo-proyectos">Mis proyectos</h1>
+        <p class="descripcion-proyectos">Estos son los proyectos que realicé hasta el momento</p>
+    </div>
+    <div class="grid-proyectos">
+        <div class="icon-proyecto">
+            <img src="./img/istockphoto-1241710721-612x612-removebg-preview.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Portfolio</p>
+        </div>
+        <div class="icon-proyecto">
+            <img src="./img/undraw_mobile_user_7oqo.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Generador de memes</p>    
+        </div>
+        <div class="icon-proyecto">
+            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_old_day_6x25.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Match 3</p>
+        </div>
+        <div class="icon-proyecto">
+            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_wallet_aym5.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Controlador de gastos</p>
+        </div>
+        <div class="icon-proyecto">
+            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_calendar_dutt.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Administrador de reuniones</p>
+        </div>
+        <div class="icon-proyecto">
+            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_to_do_list_a49b.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Todo app</p>
+        </div>
+        <div class="icon-proyecto">
+            <img src="https://frontend-proyecto-portfolio.adaitw.org/images/undraw_movie_night_fldd.png" alt class="imagen-proyecto">
+            <p class="titulo-miniatura">Buscador de películas</p>
+        </div>
+    </div>
+</section>
 
 </body>
 </html>
