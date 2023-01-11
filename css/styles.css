@@ -200,8 +200,7 @@ font-size: 35px;
 font-size: 40px;
 }
 
-
-
+/**Sección Proyectos*/
 
 
 .mis-proyectos {
@@ -217,13 +216,46 @@ align-items: center;
 .titulo-proyectos {
 font-weight: bolder;
 font-size: 35px;
-color: rgb(89, 15, 187);
+color: #590fbb;
 letter-spacing: 2px;
 }
 
 .descripcion-proyectos {
 font-size: 15px;
 margin-top: 1px;
+}
+
+.grid-proyectos {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.icon-proyecto {
+    margin: 10px;
+    padding: 30px;
+    width: 260px;
+    font-size: 55px;
+    text-align: center;
+    background-color: #ffff;
+    border-color: rgb(176, 174, 179);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 4px;
+    transition: 0.1s;
+}
+
+.icon-proyecto img {
+width: 250px;
+}
+
+.icon-proyecto p {
+font-size: 18px;
+font-weight: bolder;
+}
+
+.icon-proyecto:hover {
+border-color: rgb(89, 15, 187);
 }
 
 
