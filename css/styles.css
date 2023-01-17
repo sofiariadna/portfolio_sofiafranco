@@ -1,5 +1,12 @@
 /**Header*/
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 .header {
 display: none;
 
@@ -63,7 +70,6 @@ color: grey;
 
 .content {
     display: flex;
-    box-sizing: border-box;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -77,13 +83,13 @@ font-weight: 800;
 
 .saludo {
 font-size: 28px;
-line-height: 0;
+line-height: 2;
 }
 
 .name {
 font-size: 38px;
 color: rgb(89, 15, 187);
-line-height: 1;
+line-height: 2;
 }
 
 .personal-description {
@@ -122,13 +128,13 @@ box-shadow: 0 0 7px   rgb(89, 15, 187) , 0 0 7px   rgb(89, 15, 187) , 0 0 7px   
 
 .lenguajes {
     display: flex;
-    box-sizing: border-box;
     justify-content: center;
     flex-direction: column;
     }
 
 .mis-conocimientos {
 margin-top: 102px;
+margin-bottom: 30px;
 font-weight: bolder;
 font-size: 35px;
 color: rgb(89, 15, 187);
@@ -151,12 +157,14 @@ display: flex;
 box-sizing: border-box;
 flex-wrap: wrap;
 justify-content: center;
+padding: 15px 30px;
+margin: 15px 30px;
 }
 
 .imagen-lenguaje {
-margin: 10px;
-padding: 30px;
-width: 260px;
+margin: 25px;
+padding: 70px;
+width: 265px;
 font-size: 55px;
 text-align: center;
 background-color: #ffff;
@@ -182,7 +190,7 @@ font-weight: bolder;
 display: flex;
 justify-content: center;
 text-align: center;
-box-sizing: border-box;
+width: 100vw;
 font-size: 60px;
 padding: 30px 50px;
 background-color: rgb(89, 15, 187);
@@ -218,17 +226,21 @@ font-size: 35px;
 color: #590fbb;
 letter-spacing: 2px;
 margin-top: 102px;
+margin-bottom: 30px;
 }
 
 .descripcion-proyectos {
 font-size: 15px;
 margin-top: 1px;
+margin-bottom: 30px;
 }
 
 .grid-proyectos {
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
+margin: 15px 60px;
+padding: 15px 60px;
 }
 
 .icon-proyecto {
@@ -246,7 +258,7 @@ justify-content: center;
 }
 
 .icon-proyecto img {
-width: 250px;
+width: 220px;
 }
 
 .icon-proyecto p {
@@ -394,14 +406,13 @@ box-shadow: 0 0 7px   rgb(89, 15, 187) , 0 0 7px   rgb(89, 15, 187) , 0 0 7px   
 display: flex;
 justify-content: center;
 align-items: center;
-flex-grow: 1;
+width: 100vw;
 height: 260px;
 background-color: rgb(89, 15, 187);
 }
 
 .items-footer {
-display: flex;
-list-style: none;
+display: none;
 }
 
 .link-footer {
@@ -421,20 +432,22 @@ justify-content: center;
 
 list-style: none;
 color: #ffff;
-letter-spacing: 26px;
 padding: 15px;
 margin: 30px;
 }
 
 .items i {
-font-size: 25px;
+font-size: 17px;
 border-radius: 50%;
-padding: 15px;
-height: 25px;
-width: 25px;
+padding: 6px;
+height: 30px;
+width: 29px;
 color: rgb(89, 15, 187);
 background-color: #ffff;
-}
+        }
+
+
+/**Media*/
 
 
 @media (min-width: 1100px) {
@@ -450,13 +463,21 @@ background-color: #ffff;
         box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
     }
 
-  
+    
+
+    .items-footer {
+        display: flex;
+        list-style: none;
+        
+    }
    
 }
 
 @media (max-width: 1100px) {
+
     .content {
         flex-direction: column;
+
     }
 
     .personal-description-image {
@@ -482,18 +503,60 @@ background-color: #ffff;
 }
 
 @media (max-width: 900px) {
+
+    .contenedor-contacto {
+        margin: 120px auto;
+    }
     .contactame {
         flex-direction: column;
         padding: 80px 20px;
-        text-align: left;
-        
+        text-align: left;  
     }
 
     .contacto-izquierda {
         margin: 15px;
     }
 
+    .contacto-head p {
+        margin-top: 25px;
+        margin-bottom: 20px;
+        width: 60vw;
+    }
+
+    .redes {
+        display: flex;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .name-surname {
+        flex-direction: column;
+        margin-top: 25px;
+    }
+
+
+    .contacto-derecha-name {
+       width: 70vw;
+       
+    }
+
+    .contacto-derecha-surname {
+        width: 70vw;
+    }
+
+    .correo-mensaje {
+        width: 70vw;
+        margin-bottom: 20px;
+    }
+
+    .correo-mensaje button {
+        width: 40vw;
+    }
+
+   
 }
+
+
 
 
 
