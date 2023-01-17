@@ -1,14 +1,7 @@
 /**Header*/
 
 .header {
-display: flex;
-box-sizing: border-box;
-justify-content: flex-end;
-flex-grow: 1;
-background-color: #ffff;
--webkit-box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
--moz-box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
-box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
+display: none;
 
 }
 
@@ -63,22 +56,22 @@ color: grey;
 }
 
 
-.content {
-display: flex;
-box-sizing: border-box;
-flex-direction: row;
-align-items: center;
-justify-content: center;
-margin: 80px auto;
-}
+
 
 /**Sección Lo que Hago*/
 
-.sobre-mi {
-box-sizing: border-box;
-}
+
+.content {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 80px auto;
+    }
 
 .info {
+margin-top: 102px;
 font-weight: 800;
 }
 
@@ -99,18 +92,23 @@ color: grey;
 line-height: 1.5;
 }
 
+.personal-description-image {
+margin-top: 102px;
+width: 50%;
+}
+
 .button {
-padding: 15px 30px;
-line-height: 7;
-width: 150px;
-font-size: 14px;
-font-weight: 600;
-letter-spacing: 1px;
-transition: 0.2s;
-color: #ffff;
-background-color: rgb(89, 15, 187);
-border-radius: 50px;
-text-decoration: none;
+    padding: 15px 30px;
+    line-height: 7;
+    width: 150px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: 0.2s;
+    color: #ffff;
+    background-color: rgb(89, 15, 187);
+    border-radius: 50px;
+    text-decoration: none;
 }
 
 .button:hover {
@@ -118,20 +116,19 @@ background:  rgb(89, 15, 187) ;
 box-shadow: 0 0 7px   rgb(89, 15, 187) , 0 0 7px   rgb(89, 15, 187) , 0 0 7px   rgb(89, 15, 187) ;
 }
 
-.lenguajes {
-display: flex;
-box-sizing: border-box;
-justify-content: center;
-flex-direction: column;
-}
+
 
 /**Sección Mis Conocimientos*/
 
 .lenguajes {
-box-sizing: border-box;
-}
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    flex-direction: column;
+    }
 
 .mis-conocimientos {
+margin-top: 102px;
 font-weight: bolder;
 font-size: 35px;
 color: rgb(89, 15, 187);
@@ -190,6 +187,8 @@ font-size: 60px;
 padding: 30px 50px;
 background-color: rgb(89, 15, 187);
 color: #ffff;
+margin-top: 90px;
+margin-bottom: 90px;
 }
 
 .frase-celebre {
@@ -218,6 +217,7 @@ font-weight: bolder;
 font-size: 35px;
 color: #590fbb;
 letter-spacing: 2px;
+margin-top: 102px;
 }
 
 .descripcion-proyectos {
@@ -257,6 +257,247 @@ font-weight: bolder;
 .icon-proyecto:hover {
 border-color: rgb(89, 15, 187);
 }
+
+/**Sección Contacto*/
+
+.contenedor-contacto {
+display: flex;
+justify-content: center;
+}
+
+.contactame {
+display: flex;
+justify-content: space-evenly;
+width: 80vw;
+background-color: white;
+margin: 150px 0px;
+padding: 100px 70px;
+border-style: solid;
+border-width: 1px;
+border-radius: 4px;
+border-color:  rgb(176, 174, 179);
+}
+
+.bold {
+font-size: 40px;
+font-weight: bold;
+}
+
+.contacto-izquierda {
+width: 50%;
+padding-right: 60px;
+}
+
+.contacto-derecha {
+width: 50%;
+padding-right: 60px;
+}
+
+.contacto-head p {
+margin-bottom: 40px;
+margin-right: 85px;
+line-height: 1.5;
+}
+
+.redes {
+text-decoration: none;
+color: grey;
+}
+
+.contacto-redes ul {
+list-style: none;
+line-height: 3;
+}
+
+.contacto-redes i {
+font-size: 1.2rem;
+color: rgb(89, 15, 187);
+margin-right: 19px;
+}
+
+.redes:hover {
+color:  rgb(89, 15, 187);
+}
+
+.name-surname {
+display: flex;
+flex-direction: row;
+}
+
+.contacto-derecha-name {
+display: flex;
+flex-direction: column;
+width: 45%;
+}
+
+.contacto-derecha-surname {
+display: flex;
+flex-direction: column;
+width: 45%;
+}
+
+.name-surname {
+display: flex;
+justify-content: space-between;
+}
+
+.correo-mensaje {
+display: flex;
+flex-direction: column;
+}
+
+form label {
+font-weight: bold;
+font-size: 18px;
+margin-bottom: 15px;
+margin-top: 12px;
+}
+
+form input {
+border-radius: 10px;
+padding: 9px;
+border: none;
+background-color: rgb(238, 236, 236);
+}
+
+form textarea {
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+border-bottom-left-radius: 10px;
+border: none;
+background-color: rgb(238, 236, 236);
+height: 150px;
+}
+
+form button {
+background-color: rgb(89, 15, 187);
+border-radius: 50px;
+border: none;
+height: 55px;
+width: 25%;
+transition: 0.2s;
+color: #ffff;
+font-weight: 200;
+font-size: 17px;
+letter-spacing: 1px;
+margin-top: 17px;
+}
+
+form button:hover {
+background:  rgb(89, 15, 187) ;
+box-shadow: 0 0 7px   rgb(89, 15, 187) , 0 0 7px   rgb(89, 15, 187) , 0 0 7px   rgb(89, 15, 187) ;
+}
+
+/**Sección Footer*/
+
+.footer {
+display: flex;
+justify-content: center;
+align-items: center;
+flex-grow: 1;
+height: 260px;
+background-color: rgb(89, 15, 187);
+}
+
+.items-footer {
+display: flex;
+list-style: none;
+}
+
+.link-footer {
+text-decoration: none;
+color: white;
+margin: 0px 25px;
+padding: 15px 15px 0px 0px;
+}
+
+.social-media-items {
+display: flex;
+flex-direction: row;
+justify-content: center;
+}
+
+.items {
+
+list-style: none;
+color: #ffff;
+letter-spacing: 26px;
+padding: 15px;
+margin: 30px;
+}
+
+.items i {
+font-size: 25px;
+border-radius: 50%;
+padding: 15px;
+height: 25px;
+width: 25px;
+color: rgb(89, 15, 187);
+background-color: #ffff;
+}
+
+
+@media (min-width: 1100px) {
+    .header {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        background-color: #ffff;
+        -webkit-box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
+        -moz-box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
+        box-shadow: 2px 9px 7px -6px rgba(173,171,173,1);
+    }
+
+  
+   
+}
+
+@media (max-width: 1100px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .personal-description-image {
+        max-width: 600px;
+        margin-top: 5px;
+    }
+
+    .info {
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentacion-conocimientos {
+        align-items: center;
+        text-align: center;
+    }
+
+    .presentacion-proyectos {
+        align-items: center;
+        text-align: center;
+    }
+ 
+}
+
+@media (max-width: 900px) {
+    .contactame {
+        flex-direction: column;
+        padding: 80px 20px;
+        text-align: left;
+        
+    }
+
+    .contacto-izquierda {
+        margin: 15px;
+    }
+
+}
+
+
+
+
 
 
 
