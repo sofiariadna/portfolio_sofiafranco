@@ -56,6 +56,8 @@ text-decoration: none;
 background-color: rgb(89, 15, 187);
 border-radius: 50px;
 height: 70px;
+margin-top: 0.1875rem;
+margin-bottom: 0.1875rem;
 transition: 0.2s;
 }
 
@@ -327,22 +329,36 @@ line-height: 1.5;
 .redes {
 text-decoration: none;
 color: grey;
+transition: 2s;
+}
+
+.redes:hover {
+    color:  rgb(89, 15, 187); 
 }
 
 .contacto-redes ul {
 list-style: none;
 line-height: 3;
+
+}
+
+.contacto-redes ul li i:hover {
+    background: var(--fontColor);
+    transform: scale(1.6);
 }
 
 .contacto-redes i {
-font-size: 1.2rem;
-color: rgb(89, 15, 187);
-margin-right: 19px;
+font-size: 17px;
+border-radius: 50%;
+padding: 6px;
+height: 30px;
+width: 29px;
+margin-right: 1rem;
+background-color: rgb(132, 90, 187);
+color: #ffff;
+transition: 2s;
 }
 
-.redes:hover {
-color:  rgb(89, 15, 187);
-}
 
 .name-surname {
 display: flex;
@@ -431,7 +447,9 @@ background-color: rgb(89, 15, 187);
 
 .items-footer {
 display: none;
+transition: 3s;
 }
+
 
 .link-footer {
 text-decoration: none;
@@ -440,11 +458,13 @@ margin: 0px 25px;
 padding: 15px 15px 0px 0px;
 }
 
+
 .social-media-items {
 display: flex;
 flex-direction: row;
 justify-content: center;
 }
+
 
 .items {
 
@@ -454,6 +474,7 @@ padding: 15px;
 margin: 30px;
 }
 
+
 .items i {
 font-size: 17px;
 border-radius: 50%;
@@ -462,7 +483,13 @@ height: 30px;
 width: 29px;
 color: rgb(89, 15, 187);
 background-color: #ffff;
-        }
+transition: 1s;
+
+}
+
+.items i:hover {
+    transform: rotate(360deg);
+}
 
 
 /**Media*/
